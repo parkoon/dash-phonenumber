@@ -3,7 +3,7 @@ export type Option = {
   space: boolean
 }
 
-function dashPhoneNumber(str: string, option: Option) {
+function dashPhoneNumber(str: string, option: Option = { shape: 'dash', space: false }) {
   if (!option.shape) option.shape = 'dash'
   if (!option.space) option.space = false
 
