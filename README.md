@@ -11,7 +11,7 @@ $ npm i dash-phonenumber
 ## 사용하기
 
 ```javascript
-const dashPhoneNumber = require('./dash-phonenumber')
+const dashPhoneNumber = require('./lib/dash-phonenumber').default
 
 console.log(dashPhoneNumber('01033280917', { space: true })) // Result: 010 - 3328 - 0917
 console.log(dashPhoneNumber('01033280917', { space: false })) // Result: 010-3328-0917

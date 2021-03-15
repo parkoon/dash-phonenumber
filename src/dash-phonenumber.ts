@@ -1,4 +1,9 @@
-module.exports = function (str, option) {
+export type Option = {
+  shape: 'dash' | 'dot'
+  space: boolean
+}
+
+function dashPhoneNumber(str: string, option: Option) {
   if (!option.shape) option.shape = 'dash'
   if (!option.space) option.space = false
 
@@ -36,3 +41,5 @@ module.exports = function (str, option) {
   }
   return phone
 }
+
+export default dashPhoneNumber

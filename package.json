@@ -2,7 +2,8 @@
   "name": "dash-phonenumber",
   "version": "1.0.4",
   "description": "Add dash to phone number",
-  "main": "./build/dash-phonenumber.js",
+  "main": "lib/dash-phonenumber.js",
+  "types": "lib/dash-phonenumber.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/parkoon/dash-phonenumber.git"
