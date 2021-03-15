@@ -1,4 +1,4 @@
-function dashPhoneNumber(str: string): string {
+function useDash(str: string): string {
   const number = str.replace(/[^0-9]/g, '')
   const length = number.length
 
@@ -26,4 +26,4 @@ function dashPhoneNumber(str: string): string {
   return phone
 }
 
-export default { dashPhoneNumber }
+export default { useDash }

@@ -1,1 +1,3 @@
-export type dashPhoneNumberFunction = (str: string) => string
+declare namespace DashPhoneNumber {
+  function useDash(str: string): string
+}
