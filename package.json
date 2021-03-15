@@ -1,0 +1,27 @@
+{
+  "name": "dash-phonenumber",
+  "version": "1.0.0",
+  "description": "Add dash to phone number",
+  "main": "./build/dash-phonenumber.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkoon/dash-phonenumber.git"
+  },
+  "scripts": {
+    "clean": "rimraf build/*",
+    "build": "npm run clean && npx tsc"
+  },
+  "author": "devparkoon@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "phonenumber",
+    "dash"
+  ],
+  "bugs": {
+    "url": "https://github.com/parkoon/dash-phonenumber/issues"
+  },
+  "homepage": "https://github.com/parkoon/dash-phonenumber#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
