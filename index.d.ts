@@ -1,3 +1,1 @@
-declare namespace DashPhoneNumber {
-  function useDash(str: string): string
-}
+export type Options = {}

@@ -1,4 +1,6 @@
-function useDash(str: string): string {
+type Option = {}
+
+function useDash(str: string, option: Option = {}): string {
   const number = str.replace(/[^0-9]/g, '')
   const length = number.length
 
