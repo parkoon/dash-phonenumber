@@ -1,6 +1,6 @@
 {
   "name": "dash-phonenumber",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add dash to phone number",
   "main": "./build/dash-phonenumber.js",
   "repository": {
