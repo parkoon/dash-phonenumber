@@ -1,22 +1,12 @@
 export type Option = {
-  shape?: 'dash' | 'dot'
-  space?: boolean
+  separator?: string
 }
 
 function dashPhoneNumber(str: string, option: Option = {}) {
-  if (!option.shape) option.shape = 'dash'
-  if (!option.space) option.space = false
+  if (!option.separator) option.separator = '-'
 
   const number = str.replace(/[^0-9]/g, '')
   const length = number.length
-
-  const shape = option.shape === 'dash' ? '-' : '.'
-
-  const shapeWithSpace = option.space
-    ? option.shape === 'dash'
-      ? ` ${shape} `
-      : `${shape} `
-    : shape
 
   if (length < 4) return number
 
@@ -24,19 +14,19 @@ function dashPhoneNumber(str: string, option: Option = {}) {
 
   if (number.length < 7) {
     phone += number.substr(0, 3)
-    phone += shapeWithSpace
+    phone += option.separator
     phone += number.substr(3)
   } else if (number.length < 11) {
     phone += number.substr(0, 3)
-    phone += shapeWithSpace
+    phone += option.separator
     phone += number.substr(3, 3)
-    phone += shapeWithSpace
+    phone += option.separator
     phone += number.substr(6)
   } else {
     phone += number.substr(0, 3)
-    phone += shapeWithSpace
+    phone += option.separator
     phone += number.substr(3, 4)
-    phone += shapeWithSpace
+    phone += option.separator
     phone += number.substr(7)
   }
   return phone
